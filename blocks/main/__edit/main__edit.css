@@ -1,0 +1,19 @@
+.main__edit {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 3px;
+  right: 4px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../../../images/edit_message.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main__edit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

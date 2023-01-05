@@ -1,0 +1,6 @@
+.popup__submit_clear {
+  border: none;
+  background-color: rgb(139, 1, 1);
+  color: white;
+  font-weight: 600;
+}

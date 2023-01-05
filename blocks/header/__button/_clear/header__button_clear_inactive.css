@@ -1,0 +1,6 @@
+.header__button_clear_inactive {
+  background-color: gray;
+}
+.header__button_clear_inactive:hover {
+  background-color: gray;
+}

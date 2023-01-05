@@ -1,0 +1,18 @@
+.main__trash {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  width: 15px;
+  height: 19px;
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../../../images/TrashBlack.png');
+  border: none;
+}
+.main__trash:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

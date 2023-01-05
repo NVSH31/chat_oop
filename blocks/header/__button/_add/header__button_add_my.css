@@ -1,0 +1,9 @@
+.header__button_add_my {
+  margin-bottom: 0;
+  transition: 0.5s background-color, 0.5s box-shadow;
+}
+.header__button_add_my:hover {
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 0 6px 4px rgba(100, 100, 255, 0.5);
+}

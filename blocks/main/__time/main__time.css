@@ -1,0 +1,10 @@
+.main__time {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  color: black;
+  font-size: 10px;
+  font-weight: 700;
+}

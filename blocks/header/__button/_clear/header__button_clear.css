@@ -1,0 +1,9 @@
+.header__button_clear {
+  color: white;
+  background-color: rgb(120, 36, 36);
+  transition: 0.5s background-color;
+}
+.header__button_clear:hover {
+  background-color: rgb(246, 5, 5);
+  box-shadow: none;
+}

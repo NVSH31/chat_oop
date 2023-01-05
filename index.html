@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="icon" href="./favicon.ico">
+  <title>Document</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <button class="header__button header__button_add_my">
+        Добавить сообщение от <span class="span">текущего пользователя</span>
+      </button>
+      <button class="header__button header__button_add_friend">
+        Добавить сообщение от <span class="span">собеседника</span>
+      </button>
+    </div>
+    <button class="header__button header__button_clear">
+      Очистить чат
+    </button>
+  </header>
+  <main class="main">
+    <ul class="main__list">
+    </ul>
+  </main>
+
+  <section class="popup popup_clear">
+    <div class="popup__container">
+      <button class="popup__close-icon" type="button"></button>
+      <form class="popup__form" name="clear_form" novalidate>
+        <h2 class="popup__title">
+          Вы уверены, что хотите удалить все сообщения?
+        </h2>
+        <button type="submit" class="popup__submit popup__submit_clear">Удалить</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="popup popup_i">
+    <div class="popup__container">
+      <button class="popup__close-icon" type="button"></button>
+      <form class="popup__form" name="i_form" novalidate>
+        <h2 class="popup__title">
+          Введите сообщение от <span class="span">текущего пользователя</span>
+        </h2>
+        <textarea
+          class="popup__textarea"
+          id="i_textarea"
+          placeholder="Введите текст"
+          required
+          maxlength="200"
+        ></textarea>
+        <button type="submit" class="popup__submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="popup popup_edit">
+    <div class="popup__container">
+      <button class="popup__close-icon" type="button"></button>
+      <form class="popup__form" name="edit_form" novalidate>
+        <h2 class="popup__title">
+          Редактируйте Ваше сообщение
+        </h2>
+        <textarea
+          class="popup__textarea"
+          id="i_textarea"
+          placeholder="Введите текст"
+          required
+          maxlength="200"
+        ></textarea>
+        <button type="submit" class="popup__submit">Изменить</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="popup popup_friend">
+    <div class="popup__container">
+      <button class="popup__close-icon" type="button"></button>
+      <form class="popup__form" name="friend_form" novalidate>
+        <h2 class="popup__title">
+          Введите сообщение от <span class="span">текущего пользователя</span>
+        </h2>
+        <textarea
+          class="popup__textarea"
+          id="friend_textarea"
+          placeholder="Введите текст"
+          required
+          maxlength="200"
+        ></textarea>
+        <button type="submit" class="popup__submit">Отправить</button>
+      </form>
+    </div>
+
+  <template id="template_date">
+    <li>
+      <h2 class="main__date"></h2>
+    </li>
+  </template>
+
+  <template id="template_my-message">
+    <li class="main__item main__item_user_i">
+      <div class="main__area">
+        <button class="main__trash"></button>
+        <button class="main__edit"></button>
+        <p class="main__text"></p>
+        <p class="main__time"></p>
+      </div>
+      <img class="main__img" src="./images/1.png" alt="Аватар текущего пользователя">
+    </li>
+  </template>
+
+  <template id="template_friend-message">
+    <li class="main__item main__item_user_friend">
+      <img class="main__img" src="./images/2.png" alt="Аватар собеседника">
+      <div class="main__area">
+        <button class="main__trash"></button>
+        <p class="main__text"></p>
+        <p class="main__time"></p>
+      </div>
+    </li>
+  </template>
+  <script type="module" src="./script/script.js"></script>
+</body>
+
+</html>

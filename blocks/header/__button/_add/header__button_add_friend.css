@@ -1,0 +1,15 @@
+.header__button_add_friend {
+ margin-bottom: 0px;
+ transition: 0.5s background-color, 0.5s box-shadow;
+}
+.header__button_add_friend:hover {
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 0 6px 4px rgba(100, 255, 100, 0.5);
+}
+
+@media screen and (max-width: 560px) {
+  .header__button_add_friend {
+    margin: 10px 10px 0 auto;
+  }
+}
